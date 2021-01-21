@@ -44,7 +44,7 @@ class User:
                     KalmanList[len(KalmanList)].append(x[1])
             temp = list()
             for x in KalmanList:
-                signal_kalman_filter = kalman_filter(x[1:], A=1, H=1, Q=1.6, R=6)
+                signal_kalman_filter = kalman_filter(x, A=1, H=1, Q=1.6, R=6)
                 x[1:] = signal_kalman_filter
                 for y in x[1:]:
                     temp.append([x[0],y])
