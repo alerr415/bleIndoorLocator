@@ -6,6 +6,7 @@ class PiBuffer:
     Roombuffer = list()
 
     def addtobuffer(self,id,room):
+        print self.Roombuffer
         if not self.Roombuffer:
             self.Roombuffer.append([[id,room]])
         else:
@@ -13,7 +14,7 @@ class PiBuffer:
                 if x[0][0] ==id:
                     if(len(x)>5):
                         x.pop()
-                    x[0].append([id,room])
+                    x.append([id,room])
                     return
             self.Roombuffer.append([[id, room]])
 
