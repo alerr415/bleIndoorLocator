@@ -2,6 +2,7 @@ import thread
 import socket
 import ScannedData
 import time
+import Buffer
 
 PiList = {
     #'0': "Meg nemtom",
@@ -18,12 +19,16 @@ scannedData = ScannedData.ScannedData()
 
 def evaluate(clientsocket, addr):
     print "Visualisation connected, Start the raspberries now"
+    BufferList = Buffer.PiBuffer()
     while True:
         try:
             for x in range(len(scannedData.evaluateAll())):
                 message = scannedData.evaluateAll()[x][0] + "," + PiList[scannedData.evaluateAll()[x][1][0]] + ","
                 print message
-                clientsocket.send(message)
+                BufferList.addtobuffer(scannedData.evaluateAll()[x][0],PiList[scannedData.evaluateAll()[x][1][0]])
+
+            for x in BufferList.evaluate():
+                clientsocket.send(x)
 
             scannedData.clearList()
             scannedData.clearList()
