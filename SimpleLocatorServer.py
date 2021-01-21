@@ -61,7 +61,7 @@ def on_new_client(clientsocket, addr):
             RSSI = 100
 
         record = [piId, RSSI, UserId]
-        print record
+        #print record
         scannedData.addrecord(record)
         time.sleep(0.2)
     clientsocket.close()
