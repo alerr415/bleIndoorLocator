@@ -11,14 +11,14 @@ class User:
         while len(self.PiData) > 0:
             self.PiData.pop()
 
-    def evaluate(self):  #Visszaadja , hgoy az adott userID ( ember) hez melyik raspberry van a legkozelebb
-        legkozelebbi = self.PiData[0]
+    def evaluate(self):  # Returns the closest raspberry
+        closest = self.PiData[0]
 
         for x in self.PiData:
-              if legkozelebbi[1] > x[1]:
-                legkozelebbi = x
+              if closest[1] > x[1]:
+                closest = x
 
-        return [self.userId, legkozelebbi]
+        return [self.userId, closest]
 
     def printlist(self):
         print self.userId, " ", self.PiData

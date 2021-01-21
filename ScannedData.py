@@ -19,7 +19,7 @@ class ScannedData:
             if x.userId == var[2]:
                 x.PiData.append(record)
                 found = True
-            index = index +1
+            index = index + 1
 
         if not found:
             print "New user added"

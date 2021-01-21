@@ -5,16 +5,15 @@ from statistics import mode
 class PiBuffer:
     Roombuffer = list()
 
-    def addtobuffer(self,id,room):
-        print self.Roombuffer
+    def addtobuffer(self, id, room):
         if not self.Roombuffer:
-            self.Roombuffer.append([[id,room]])
+            self.Roombuffer.append([[id, room]])
         else:
             for x in self.Roombuffer:
-                if x[0][0] ==id:
-                    if(len(x)>=5):
+                if x[0][0] == id:
+                    if len(x) >= 5:
                         x.pop(0)
-                    x.append([id,room])
+                    x.append([id, room])
                     return
             self.Roombuffer.append([[id, room]])
 
@@ -26,7 +25,7 @@ class PiBuffer:
             for y in x:
                 rooms.append(y[1])
             try:
-                message.append([x[0][0] ,mode(rooms)])
+                message.append([x[0][0], mode(rooms)])
                 break
             except:
                 pass

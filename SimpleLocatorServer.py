@@ -22,7 +22,7 @@ def evaluate(clientsocket, addr):
     BufferList = Buffer.PiBuffer()
     while True:
         try:
-            for x in range(len(scannedData.evaluateAll())): # where the server thinks the phones are from raw data
+            for x in range(len(scannedData.evaluateAll())):  # where the server thinks the phones are from raw data
                 message = scannedData.evaluateAll()[x][0] + "," + PiList[scannedData.evaluateAll()[x][1][0]] + ","
                 print message
                 BufferList.addtobuffer(scannedData.evaluateAll()[x][0], PiList[scannedData.evaluateAll()[x][1][0]]) # put the data into a buffer , so it can be processed further
@@ -48,18 +48,16 @@ def evaluate(clientsocket, addr):
             pass
 
 
-
-
-def on_new_client(clientsocket, addr):   #each raspberry gets a thread
+def on_new_client(clientsocket, addr):   # each raspberry gets a thread
     print("new thread opened for: ", addr)
     while True:
         msg = clientsocket.recv(1024)
         arr = msg.split(';')
         piId, UserId, RSSI = list(arr[0])[3], arr[1], float(''.join(list(arr[2])[1:3]))
-        if RSSI < 20:   #if rssi is under 20 , its an anomaly
+        if RSSI < 20:   # if rssi is under 20 , its an anomaly
             RSSI = 100
 
-        if RSSI >= 90:  #above 90 is basically unmeasureable
+        if RSSI >= 90:  # above 90 is basically immeasurable
             RSSI = 100
 
         record = [piId, RSSI, UserId]
