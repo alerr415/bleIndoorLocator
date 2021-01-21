@@ -1,5 +1,3 @@
-from util import *
-
 
 class User:
 
@@ -24,34 +22,3 @@ class User:
 
     def printlist(self):
         print self.userId, " ", self.PiData
-
-
-
-    def KalmanFilterPiData(self):
-        try:
-            KalmanList = list()
-            found = False
-            for x in self.PiData:
-                if not KalmanList:
-                    KalmanList.append(x[0])
-                    KalmanList[0].append(x[1])
-                for y in range(len(KalmanList)):
-                    if x[0] == KalmanList[y][0]:
-                        KalmanList[y].append(x[1])
-                        found = True
-                if not found:
-                    KalmanList[len(KalmanList)].append(x[0])
-                    KalmanList[len(KalmanList)].append(x[1])
-            temp = list()
-            for x in KalmanList:
-                signal_kalman_filter = kalman_filter(x[1:], A=1, H=1, Q=1.6, R=6)
-                x[1:] = signal_kalman_filter
-                for y in x[1:]:
-                    temp.append([x[0],y])
-
-                self.PiData = temp
-        except:
-            print("Not stonks")
-
-
-
