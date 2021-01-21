@@ -19,8 +19,11 @@ class PiBuffer:
 
     def evaluate(self):
         message = list()
+        rooms = list()
         for x in self.Roombuffer:
-            message.append(mode(x))
+            for y in x:
+                rooms.append(y[1])
+            message.append([x[0][0] ,mode(rooms)])
         return message
 
 
