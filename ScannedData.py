@@ -19,6 +19,7 @@ class ScannedData:
             if x.userId == var[2]:
                 #print x.userId , " Found"
                 x.PiData.append(record)
+                #Asdasdasdasd
                 #print index , ". rekord a lsitaban:" , var[2] , " " , x.userId
                 #self.d1[index].printlist()
               # print record , " appended"
