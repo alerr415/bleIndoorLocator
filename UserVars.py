@@ -15,7 +15,7 @@ class User:
         closest = self.PiData[0]
 
         for x in self.PiData:
-              if closest[1] > x[1]:
+            if closest[1] > x[1]:
                 closest = x
 
         return [self.userId, closest]

@@ -29,7 +29,7 @@ class ScannedData:
     def evaluateAll(self):
         a = list()
         for x in self.d1:
-           a.append(x.evaluate())
+            a.append(x.evaluate())
 
         return a
 
