@@ -29,6 +29,10 @@ class PiBuffer:
                 except:
                     print "ugyanannyi jo es rossz ertek"
         print rooms
+        try:
+            print mode(rooms)
+        except:
+            pass
         return message
 
 
