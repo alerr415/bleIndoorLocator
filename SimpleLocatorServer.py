@@ -63,7 +63,6 @@ def on_new_client(clientsocket, addr):   #each raspberry gets a thread
             RSSI = 100
 
         record = [piId, RSSI, UserId]
-        #print record
         scannedData.addrecord(record)
         time.sleep(0.2)
     clientsocket.close()
