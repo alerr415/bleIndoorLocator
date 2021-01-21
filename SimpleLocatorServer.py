@@ -30,7 +30,7 @@ def evaluate(clientsocket, addr):
             for x in BufferList.evaluate():
                 finalmessage = x[0] + "," + x[1] + ","
                 clientsocket.send(finalmessage)
-                time.sleep(0.5)
+                time.sleep(1)
 
 
             scannedData.clearList()
@@ -43,7 +43,7 @@ def evaluate(clientsocket, addr):
             scannedData.clearList()
             scannedData.clearList()
             scannedData.clearList()
-            time.sleep(0.5)
+            time.sleep(0.2)
 
         except IndexError:
             print("No data received yet ")
