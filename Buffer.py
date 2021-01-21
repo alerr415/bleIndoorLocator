@@ -13,7 +13,7 @@ class PiBuffer:
             for x in self.Roombuffer:
                 if x[0][0] ==id:
                     if(len(x)>5):
-                        x.pop()
+                        x.pop(0)
                     x.append([id,room])
                     return
             self.Roombuffer.append([[id, room]])
