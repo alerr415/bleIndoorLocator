@@ -26,8 +26,9 @@ class PiBuffer:
                 rooms.append(y[1])
                 try:
                     message.append([x[0][0] ,mode(rooms)])
+                    break
                 except:
-                    print "ugyanannyi jo es rossz ertek"
+                    pass
         return message
 
 
