@@ -46,7 +46,7 @@ def evaluate(clientsocket, addr):
             time.sleep(0.2)
 
         except IndexError:
-            print("No data received yet ")
+            pass
 
 
 
