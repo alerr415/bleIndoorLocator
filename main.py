@@ -13,7 +13,6 @@ args = parser.parse_args()
 
 file_name = args.file
 
-# open file and read RSSI signal
 
 file = pd.read_csv(file_name)
 
