@@ -6,7 +6,7 @@ class PiBuffer:
     Roombuffer = list()
 
     def addtobuffer(self,id,room):
-        print self.Roombuffer
+        #print self.Roombuffer
         if not self.Roombuffer:
             self.Roombuffer.append([[id,room]])
         else:
@@ -28,6 +28,7 @@ class PiBuffer:
                     message.append([x[0][0] ,mode(rooms)])
                 except:
                     print "ugyanannyi jo es rossz ertek"
+        print rooms
         return message
 
 

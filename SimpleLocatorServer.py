@@ -24,7 +24,7 @@ def evaluate(clientsocket, addr):
         try:
             for x in range(len(scannedData.evaluateAll())):
                 message = scannedData.evaluateAll()[x][0] + "," + PiList[scannedData.evaluateAll()[x][1][0]] + ","
-                print message
+                #print message
                 BufferList.addtobuffer(scannedData.evaluateAll()[x][0], PiList[scannedData.evaluateAll()[x][1][0]])
 
             for x in BufferList.evaluate():
