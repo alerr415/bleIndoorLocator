@@ -36,6 +36,7 @@ class ScannedData:
         a = list()
         #print(self.d1[0].PiData)
         for x in self.d1:
+           x.KalmanFilterPiData()
            a.append(x.evaluate())
 
         return a
