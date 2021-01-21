@@ -14,7 +14,7 @@ class User:
     def evaluate(self):  #Visszaadja , hgoy az adott userID ( ember) hez melyik raspberry van a legkozelebb
         legkozelebbi = self.PiData[0]
 
-        for x in self.PiData:                        #x in PiData = [ "pi" , "Rssi"]
+        for x in self.PiData:
               if legkozelebbi[1] > x[1]:
                 legkozelebbi = x
 
