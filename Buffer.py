@@ -20,15 +20,16 @@ class PiBuffer:
 
     def evaluate(self):
         message = list()
-        rooms = list()
+
         for x in self.Roombuffer:
+            rooms = list()
             for y in x:
                 rooms.append(y[1])
-                try:
-                    message.append([x[0][0] ,mode(rooms)])
-                    break
-                except:
-                    pass
+            try:
+                message.append([x[0][0] ,mode(rooms)])
+                break
+            except:
+                pass
         return message
 
 
