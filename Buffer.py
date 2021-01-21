@@ -24,7 +24,10 @@ class PiBuffer:
         for x in self.Roombuffer:
             for y in x:
                 rooms.append(y[1])
-            message.append([x[0][0] ,mode(rooms)])
+                try:
+                    message.append([x[0][0] ,mode(rooms)])
+                except:
+                    print "ugyanannyi jo es rossz ertek"
         return message
 
 
