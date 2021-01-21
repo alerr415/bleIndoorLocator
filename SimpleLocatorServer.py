@@ -51,6 +51,9 @@ def on_new_client(clientsocket, addr):
         if RSSI < 20:
             RSSI = 100
 
+        if RSSI >= 90:
+            RSSI = 100
+
         record = [piId, RSSI, UserId]
         print record
         scannedData.addrecord(record)
