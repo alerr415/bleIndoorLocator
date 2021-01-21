@@ -21,14 +21,17 @@ class PiBuffer:
         message = list()
 
         for x in self.Roombuffer:
+            # print self.Roombuffer
             rooms = list()
             for y in x:
                 rooms.append(y[1])
             try:
+
                 message.append([x[0][0], mode(rooms)])
-                break
+
             except:
                 pass
+        print message
         return message
 
 
