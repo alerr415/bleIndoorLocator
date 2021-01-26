@@ -32,6 +32,7 @@ class PiBuffer:
             except:
                 pass
         print message
+
         return message
 
 
