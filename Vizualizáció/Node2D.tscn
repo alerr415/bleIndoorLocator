@@ -1,0 +1,148 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Node2D.cs" type="Script" id=1]
+[ext_resource path="res://2021-01-12.png" type="Texture" id=2]
+
+[sub_resource type="Theme" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 657.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2021-01-12" type="Sprite" parent="TextureRect"]
+position = Vector2( 510.759, 299.8 )
+scale = Vector2( 0.690181, 0.86399 )
+texture = ExtResource( 2 )
+
+[node name="iroda" type="ColorRect" parent="."]
+margin_left = 597.841
+margin_top = 77.3182
+margin_right = 685.841
+margin_bottom = 184.318
+color = Color( 0.152941, 0.145098, 0.145098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ebedlo" type="ColorRect" parent="."]
+margin_left = 587.762
+margin_top = 486.0
+margin_right = 800.762
+margin_bottom = 584.0
+color = Color( 0.180392, 0.160784, 0.160784, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mernok1" type="ColorRect" parent="."]
+margin_left = 226.848
+margin_top = 17.6606
+margin_right = 579.848
+margin_bottom = 304.661
+theme = SubResource( 1 )
+color = Color( 0.207843, 0.180392, 0.180392, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mernok2" type="ColorRect" parent="."]
+margin_left = 225.0
+margin_top = 320.0
+margin_right = 579.0
+margin_bottom = 583.0
+color = Color( 0.2, 0.172549, 0.172549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="kistargyalo" type="ColorRect" parent="."]
+margin_left = 869.039
+margin_top = 77.5796
+margin_right = 939.039
+margin_bottom = 184.58
+color = Color( 0.180392, 0.160784, 0.160784, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nagytargyalo" type="ColorRect" parent="."]
+margin_left = 703.625
+margin_top = 77.2461
+margin_right = 848.625
+margin_bottom = 180.246
+color = Color( 0.137255, 0.12549, 0.12549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Labelebedlo" type="Label" parent="."]
+margin_left = 663.371
+margin_top = 513.67
+margin_right = 717.371
+margin_bottom = 558.67
+custom_colors/font_color = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Labelkistargyalo" type="Label" parent="."]
+margin_left = 883.665
+margin_top = 110.326
+margin_right = 923.665
+margin_bottom = 147.326
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelIroda" type="Label" parent="."]
+margin_left = 619.991
+margin_top = 110.317
+margin_right = 653.991
+margin_bottom = 147.317
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Labelmernok2" type="Label" parent="."]
+margin_left = 372.407
+margin_top = 421.62
+margin_right = 429.407
+margin_bottom = 483.62
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Labelmernok1" type="Label" parent="."]
+margin_left = 343.0
+margin_top = 127.0
+margin_right = 431.0
+margin_bottom = 201.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Labelnagytargyalo" type="Label" parent="."]
+margin_left = 760.688
+margin_top = 119.33
+margin_right = 813.688
+margin_bottom = 150.33
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
