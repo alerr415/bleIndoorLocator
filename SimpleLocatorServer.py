@@ -5,14 +5,12 @@ import time
 import Buffer
 
 PiList = {
-    #'0': "Meg nemtom",
-    #'1': "mernok1",
-    #'2': "mernok2"
-
-    '3': "mernok1",
-    '1': "nagytargyalo",
-    '2': "mernok2",
-    '4': "nemtudom"
+    '1': "mernok1",
+    '2': "ebedlo",
+    '3': "mernok2",
+    '4': "kistargyalo",
+    '5': "nagytargyalo",
+    '6': "iroda",
 }
 
 scannedData = ScannedData.ScannedData()
