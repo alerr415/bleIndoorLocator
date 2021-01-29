@@ -17,6 +17,7 @@ scannedData = ScannedData.ScannedData()
 
 
 def evaluate(clientsocket, addr):
+    print clientsocket.getHostByName();
     print "Visualisation connected, Start the raspberries now"
     BufferList = Buffer.PiBuffer()
     while True:
