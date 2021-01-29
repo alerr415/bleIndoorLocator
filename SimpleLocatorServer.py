@@ -67,11 +67,11 @@ print 'Waiting for clients...'
 
 s.bind((host, port))
 
-vizualization = ('10.20.10.216', 51677)
+vizualization = ('10.20.10.216')
 while True:
     s.listen(5)
     c, addr = s.accept()
-    if addr == vizualization:
+    if addr[0] == vizualization:
         thread.start_new_thread(evaluate, (c, addr))
     else:
         print 'Got connection from', addr
