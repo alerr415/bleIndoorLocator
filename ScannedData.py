@@ -13,13 +13,11 @@ class ScannedData:
             self.d1.append(newUser1)
 
         found = False
-        index = 0
 
         for x in self.d1:
             if x.userId == var[2]:
                 x.PiData.append(record)
                 found = True
-            index = index + 1
 
         if not found:
             print "New user added"
@@ -34,8 +32,8 @@ class ScannedData:
         return a
 
     def clearList(self):
-        for x in range(len(self.d1)):
-            self.d1[x].clearList()
+        while(len(self.d1)>0):
+            self.d1.pop()
 
 
 

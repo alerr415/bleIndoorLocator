@@ -22,10 +22,11 @@ def evaluate(clientsocket, addr):
     BufferList = Buffer.PiBuffer()
     while True:
         try:
-            for x in range(len(scannedData.evaluateAll())):  # where the server thinks the phones are from raw data
-                message = scannedData.evaluateAll()[x][0] + "," + PiList[scannedData.evaluateAll()[x][1][0]] + ","
+            evaluatedlist = scannedData.evaluateAll()
+            for x in range(len(evaluatedlist)):  # where the server thinks the phones are from raw data
+                message = evaluatedlist[x][0] + "," + PiList[evaluatedlist[x][1][0]] + ","
                 #print message
-                BufferList.addtobuffer(scannedData.evaluateAll()[x][0], PiList[scannedData.evaluateAll()[x][1][0]]) # put the data into a buffer , so it can be processed further
+                BufferList.addtobuffer(evaluatedlist[x][0], PiList[evaluatedlist[x][1][0]]) # put the data into a buffer , so it can be processed further
 
             for x in BufferList.evaluate():
 
@@ -33,15 +34,6 @@ def evaluate(clientsocket, addr):
                 clientsocket.send(finalmessage)         #of those (so 1 rogue data cant go out)
                 time.sleep(1)  #my vizualization needs time to process
 
-            scannedData.clearList()
-            scannedData.clearList()
-            scannedData.clearList()
-            scannedData.clearList()
-            scannedData.clearList()
-            scannedData.clearList()
-            scannedData.clearList()
-            scannedData.clearList()
-            scannedData.clearList()
             scannedData.clearList()
             time.sleep(0.2)
 
