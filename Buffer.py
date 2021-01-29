@@ -30,6 +30,7 @@ class PiBuffer:
                 message.append([x[0][0], mode(rooms)])
 
             except:
+                print("hiba")
                 pass
         print message
 

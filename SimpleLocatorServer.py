@@ -5,10 +5,6 @@ import time
 import Buffer
 
 PiList = {
-    #'0': "Meg nemtom",
-    #'1': "mernok1",
-    #'2': "mernok2"
-
     '1': "mernok1",
     '2': "ebedlo",
     '3': "mernok2",
@@ -24,6 +20,7 @@ def evaluate(clientsocket, addr):  # when visualization started
     print "Visualisation connected, Start the raspberries now"
     BufferList = Buffer.PiBuffer()
     while True:
+        time.sleep(2)  # my visualization needs time to process, final processed data
         try:
             for x in range(len(scannedData.evaluateAll())):  # where the server thinks the phones are from raw data
                 # message = scannedData.evaluateAll()[x][0] + "," + PiList[scannedData.evaluateAll()[x][1][0]] + ","
@@ -34,7 +31,6 @@ def evaluate(clientsocket, addr):  # when visualization started
 
                 finalmessage = x[0] + "," + x[1] + ","  # and this function returns the mode
                 clientsocket.send(finalmessage)         # of those (so 1 rogue data cant go out)
-                time.sleep(1)  # my visualization needs time to process, final processed data
 
             scannedData.clearList()  # delete list
             scannedData.clearList()
@@ -46,7 +42,6 @@ def evaluate(clientsocket, addr):  # when visualization started
             scannedData.clearList()
             scannedData.clearList()
             scannedData.clearList()
-            time.sleep(0.2)
 
         except IndexError:
             pass
