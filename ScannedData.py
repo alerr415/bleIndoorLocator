@@ -9,7 +9,6 @@ class ScannedData:
         record = [var[0], var[1]]
         if not self.d1:
             newUser1 = UserVars.User(var[2], record)
-            print "List created"
             self.d1.append(newUser1)
 
         found = False
@@ -20,7 +19,6 @@ class ScannedData:
                 found = True
 
         if not found:
-            print "New user added"
             newUser = UserVars.User(var[2], record)
             self.d1.append(newUser)
 
