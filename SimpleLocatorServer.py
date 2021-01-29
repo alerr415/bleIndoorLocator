@@ -11,7 +11,8 @@ PiList = {
 
     '3': "mernok1",
     '1': "nagytargyalo",
-    '2': "mernok2"
+    '2': "mernok2",
+    '4': "nemtudom"
 }
 
 scannedData = ScannedData.ScannedData()
