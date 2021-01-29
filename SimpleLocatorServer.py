@@ -66,11 +66,13 @@ print 'Server started!'
 print 'Waiting for clients...'
 
 s.bind((host, port))
-s.listen(5)
-c, addr = s.accept()
-thread.start_new_thread(evaluate, (c, addr))
 
+vizualization = ('10.20.10.216', 51677)
 while True:
+    s.listen(5)
     c, addr = s.accept()
-    print 'Got connection from', addr
-    thread.start_new_thread(on_new_client, (c, addr))
+    if addr == vizualization:
+        thread.start_new_thread(evaluate, (c, addr))
+    else:
+        print 'Got connection from', addr
+        thread.start_new_thread(on_new_client, (c, addr))
