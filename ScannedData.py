@@ -1,11 +1,12 @@
 import UserVars
+from Configuration import configurator
 
 
 class ScannedData:
     d1 = list()
 
     def addrecord(self, var):
-
+        var = configurator(var)
         record = [var[0], var[1]]
         if not self.d1:
             newUser1 = UserVars.User(var[2], record)
