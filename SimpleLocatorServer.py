@@ -17,7 +17,6 @@ scannedData = ScannedData.ScannedData()
 
 
 def evaluate(clientsocket, addr):
-    print clientsocket.getHostByName();
     print "Visualisation connected"
     BufferList = Buffer.PiBuffer()
     while True:
