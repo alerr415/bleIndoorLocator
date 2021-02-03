@@ -20,6 +20,7 @@ def evaluate(clientsocket, addr):
     print "Visualisation connected"
     BufferList = Buffer.PiBuffer()
     while True:
+        time.sleep(2)
         try:
             evaluatedlist = scannedData.evaluateAll()
             for x in range(len(evaluatedlist)):  # where the server thinks the phones are from raw data
