@@ -11,10 +11,10 @@
     "PORT": 4242,
     "mernok1": 0,
     "mernok2": 0,
-    "ebedlo": 0,
-    "kistargyalo": 0,
-    "iroda": 0,
-    "nagytargyalo": 0,
+    "ebedlo": 10,
+    "kistargyalo": 15,
+    "iroda": 10,
+    "nagytargyalo": 10,
     "MAX_VALUE": 100,
     "MIN_VALUE": 20
   }
