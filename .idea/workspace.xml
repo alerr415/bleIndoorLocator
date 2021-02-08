@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="f31a4089-030f-48fb-970d-2c3182f14e2c" name="Default Changelist" comment="Config on server" />
+=======
+    <list default="true" id="f31a4089-030f-48fb-970d-2c3182f14e2c" name="Default Changelist" comment="Config on server">
+      <change beforePath="$PROJECT_DIR$/Buffer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Buffer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScannedData.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScannedData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleLocatorServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleLocatorServer.py" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,6 +185,7 @@
       <screen x="1920" y="-324" width="1920" height="1040" />
     </state>
     <state x="2012" y="-232" width="1736" height="856" key="DiffContextDialog/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1611906042917" />
+<<<<<<< Updated upstream
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1612777428914">
       <screen x="1920" y="-324" width="1920" height="1040" />
     </state>
@@ -192,6 +202,24 @@
       <screen x="1920" y="-324" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1612777428914" />
+=======
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1612523961944">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1612523961944" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1612523961944">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1612523961944" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1612523961944">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1612523961944" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1612523961944">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1612523961944" />
+>>>>>>> Stashed changes
     <state x="2518" y="-43" key="MultipleFileMergeDialog" timestamp="1611905829639">
       <screen x="1920" y="-324" width="1920" height="1040" />
     </state>

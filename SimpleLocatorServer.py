@@ -3,16 +3,11 @@ import socket
 import ScannedData
 import time
 import Buffer
+import  Configuration
 
-PiList = {
-    '1': "mernok1",
-    '2': "ebedlo",
-    '3': "mernok2",
-    '4': "kistargyalo",
-    '5': "nagytargyalo",
-    '6': "iroda",
-}
 
+PiList = Configuration.Config().data
+Conf = Configuration.Config()
 scannedData = ScannedData.ScannedData()
 
 
@@ -20,6 +15,7 @@ def evaluate(clientsocket, addr):
     print "Visualisation connected"
     BufferList = Buffer.PiBuffer()
     while True:
+        time.sleep(Conf.data['TIME_TO_EVALUATE'])
         try:
             evaluatedlist = scannedData.evaluateAll()
             for x in range(len(evaluatedlist)):  # where the server thinks the phones are from raw data
@@ -27,11 +23,11 @@ def evaluate(clientsocket, addr):
                 #print message
                 BufferList.addtobuffer(evaluatedlist[x][0], PiList[evaluatedlist[x][1][0]]) # put the data into a buffer , so it can be processed further
 
-            for x in BufferList.evaluate():
+            for x in BufferList.evaluate():   # this function returns the mode of each person's buffer list (so 1 rogue data cant go out)
 
-                finalmessage = x[0] + "," + x[1] + ","  # and this function returns the mode
-                clientsocket.send(finalmessage)         #of those (so 1 rogue data cant go out)
-                time.sleep(1)  #my vizualization needs time to process
+                finalmessage = x[0] + "," + x[1] + ","
+                clientsocket.send(finalmessage)
+                time.sleep(1)  #vizualization needs time to process
 
             scannedData.clearList()
             time.sleep(0.2)
@@ -46,11 +42,9 @@ def on_new_client(clientsocket, addr):   # each raspberry gets a thread
         msg = clientsocket.recv(1024)
         arr = msg.split(';')
         piId, UserId, RSSI = list(arr[0])[3], arr[1], float(''.join(list(arr[2])[1:3]))
-        if RSSI < 20:   # if rssi is under 20 , its an anomaly
-            RSSI = 100
 
-        if RSSI >= 90:  # above 90 is basically immeasurable
-            RSSI = 100
+        if RSSI <= Conf.data['MIN_VALUE'] or RSSI >= Conf.data['MAX_VALUE']:  # MIN_VALUE<RSSI<MAX_VALUE
+            continue
 
         record = [piId, RSSI, UserId]
         scannedData.addrecord(record)
@@ -60,14 +54,14 @@ def on_new_client(clientsocket, addr):   # each raspberry gets a thread
 
 s = socket.socket()
 host = socket.gethostname()
-port = 4242
+port = Conf.data['PORT']
 
 print 'Server started!'
 print 'Waiting for clients...'
 
 s.bind((host, port))
 
-vizualization = ('10.20.10.216')
+vizualization = Conf.data['IP_ADDRESS_OF_PLC']
 while True:
     s.listen(5)
     c, addr = s.accept()

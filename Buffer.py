@@ -1,6 +1,7 @@
 import statistics
 from statistics import mode
-
+import Configuration
+Conf = Configuration.Config()
 
 class PiBuffer:
     Roombuffer = list()
@@ -11,7 +12,7 @@ class PiBuffer:
         else:
             for x in self.Roombuffer:
                 if x[0][0] == id:
-                    if len(x) >= 5:
+                    if len(x) >= Conf.data['BUFFER_SIZE']:
                         x.pop(0)
                     x.append([id, room])
                     return

@@ -1,21 +1,19 @@
-def configurator(var):
+import json
 
-    if var[0] == '1': # mernok1
-        var[1] = var[1]
+class Config:
+    data = dict()
+# Opening JSON file
+    def __init__(self):
+        with open('config.json') as json_file:
+            self.data = json.load(json_file)
 
-    if var[0] == '2':  # ebedlo
-        var[1] = var[1]
 
-    if var[0] == '3':  # mernok2
-        var[1] = var[1]
 
-    if var[0] == '4':  # kstargyalo
-        var[1] = var[1] + 20
 
-    if var[0] == '5':  # nagytarghyalo
-        var[1] = var[1] + 10
+    def Configurate(self,var):
+        try:
+            var[0] = var[0] + self.data[self.data[var[0]]]
+            return var
+        except:
+            return var
 
-    if var[0] == '6':  # iroda
-        var[1] = var[1] + 15
-
-    return var
