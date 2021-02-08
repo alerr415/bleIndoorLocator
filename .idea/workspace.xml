@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f31a4089-030f-48fb-970d-2c3182f14e2c" name="Default Changelist" comment="Config on server" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nNqP5zHmPzcdGSEOYL39NH9B44" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Configuration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bleIndoorLocator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Configuration.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Configuration" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f31a4089-030f-48fb-970d-2c3182f14e2c" name="Default Changelist" comment="" />
+      <created>1611240868280</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611240868280</updated>
+    </task>
+    <task id="LOCAL-00001" summary="optimization">
+      <created>1611905477367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611905477367</updated>
+    </task>
+    <task id="LOCAL-00002" summary="optimization">
+      <created>1611906010616</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611906010616</updated>
+    </task>
+    <task id="LOCAL-00003" summary="optimization">
+      <created>1611906040503</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611906040503</updated>
+    </task>
+    <task id="LOCAL-00004" summary="visualization can connect whenever">
+      <created>1611910212127</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611910212127</updated>
+    </task>
+    <task id="LOCAL-00005" summary="visualization can connect whenever // fixed tuple">
+      <created>1611910424568</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611910424568</updated>
+    </task>
+    <task id="LOCAL-00006" summary="print">
+      <created>1611910544094</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611910544094</updated>
+    </task>
+    <task id="LOCAL-00007" summary="print">
+      <created>1611910621244</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611910621244</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Config on server">
+      <created>1611919767485</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611919767485</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Config on server">
+      <created>1611920557583</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611920557583</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="optimization" />
+    <MESSAGE value="visualization can connect whenever" />
+    <MESSAGE value="visualization can connect whenever // fixed tuple" />
+    <MESSAGE value="print" />
+    <MESSAGE value="Config on server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config on server" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2012" y="-232" width="1736" height="856" key="DiffContextDialog" timestamp="1611906042917">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="-232" width="1736" height="856" key="DiffContextDialog/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1611906042917" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1612777428914">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1612777428914" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1612777428914">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1612777428914" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1612777428914">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1612777428914" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1612777428914">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1612777428914" />
+    <state x="2518" y="-43" key="MultipleFileMergeDialog" timestamp="1611905829639">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state x="2518" y="-43" key="MultipleFileMergeDialog/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1611905829639" />
+    <state x="2381" y="-159" key="SettingsEditor" timestamp="1611910169416">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state x="2381" y="-159" key="SettingsEditor/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1611910169416" />
+    <state x="2543" y="-99" width="672" height="678" key="search.everywhere.popup" timestamp="1612772891620">
+      <screen x="1920" y="-324" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="-99" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.-324.1920.1040@1920.-324.1920.1040" timestamp="1612772891620" />
+  </component>
+</project>
