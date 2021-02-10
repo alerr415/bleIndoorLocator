@@ -12,9 +12,11 @@ scannedData = ScannedData.ScannedData()
 
 
 def evaluate(clientsocket, addr):
+    print "CONF (Time to evaluate: ", Conf.data['TIME_TO_EVALUATE'],')'
     print "Visualisation connected"
     BufferList = Buffer.PiBuffer()
     while True:
+
         time.sleep(Conf.data['TIME_TO_EVALUATE'])
         try:
             evaluatedlist = scannedData.evaluateAll()
@@ -27,10 +29,8 @@ def evaluate(clientsocket, addr):
 
                 finalmessage = x[0] + "," + x[1] + ","
                 clientsocket.send(finalmessage)
-                time.sleep(1)  #vizualization needs time to process
 
             scannedData.clearList()
-            time.sleep(0.2)
 
         except IndexError:
             pass
@@ -41,9 +41,9 @@ def on_new_client(clientsocket, addr):   # each raspberry gets a thread
     while True:
         msg = clientsocket.recv(1024)
         arr = msg.split(';')
-        piId, UserId, RSSI = list(arr[0])[3], arr[1], float(''.join(list(arr[2])[1:3]))
+        piId ,UserId, RSSI = ''.join(list(arr[0])[3:]), arr[1], float(''.join(list(arr[2])[1:3]))
 
-        if RSSI <= Conf.data['MIN_VALUE'] or RSSI >= Conf.data['MAX_VALUE']:  # MIN_VALUE<RSSI<MAX_VALUE
+        if RSSI <= Conf.data['MIN_VALUE'] or RSSI >= Conf.data['MAX_VALUE']:  # MIN_VALUE < RSSI < MAX_VALUE
             continue
 
         record = [piId, RSSI, UserId]
@@ -55,7 +55,8 @@ def on_new_client(clientsocket, addr):   # each raspberry gets a thread
 s = socket.socket()
 host = socket.gethostname()
 port = Conf.data['PORT']
-
+print "CONF (MINIMUM RSSI: ", Conf.data['MIN_VALUE'], ')'
+print "CONF (MAXIMUM RSSI: ", Conf.data['MAX_VALUE'], ')'
 print 'Server started!'
 print 'Waiting for clients...'
 

@@ -13,7 +13,7 @@ class Config:
     def Configurate(self,var):
         try:
             var[0] = var[0] + self.data[self.data[var[0]]]
-            return var
-        except:
+        except: pass
+        finally:
             return var
 
